@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
 import axios from 'axios';
-const baseURL="http://localhost:5000"
+const baseURL="https://survey-app-service.onrender.com"
 function SurveyList() {
   const [surveys, setSurveys] = useState([]);
   const [isUserAdmin, setIsUserAdmin] = useState(false);
