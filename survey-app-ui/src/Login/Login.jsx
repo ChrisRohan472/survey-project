@@ -11,7 +11,7 @@ const LoginPage = () => {
   const navigate = useNavigate();
   const handleLogin = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/api/login', { username, password });
+      const response = await axios.post('https://survey-app-service.onrender.com/api/login', { username, password });
       const token = response.data.token;
       localStorage.setItem('token', token);
       navigate('/surveylist');
